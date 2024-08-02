@@ -1,5 +1,8 @@
 # KCD Taipei x COSCUP2024 - Develop and deploy lightweight Wasm+LLM containers
 
+## Slide
+[Link](https://docs.google.com/presentation/d/1V6Xr9SZrCB9aaIZd56pGrNDXMn7wK5Q8ZERGMH92jJs/edit?usp=sharing)
+
 ## Build llamaedge
 
 If you don't want to build it, you can download the pre-built assets instead.
@@ -23,6 +26,12 @@ cd LlamaEdge/api-server
 cargo build --release --target wasm32-wasip1
 # The built wasm is here
 cp ./target/wasm32-wasip1/release/llama-api-server.wasm ../../
+```
+
+### Download llamaedge instead
+
+```console
+curl -LO https://github.com/LlamaEdge/LlamaEdge/releases/latest/download/llama-api-server.wasm
 ```
 
 ### Package it into the container
